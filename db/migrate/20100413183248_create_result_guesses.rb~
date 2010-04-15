@@ -1,0 +1,16 @@
+class CreateResultGuesses < ActiveRecord::Migration
+  def self.up
+    create_table :resultguesses do |t|
+      t.references :matchguesses_id
+      t.references :team_id
+      t.integer :goals
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :resultguesses
+  end
+end
+

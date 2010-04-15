@@ -1,0 +1,5 @@
+class MatchGuesses < ActiveRecord::Base
+  has_many :result_guesses
+  has_many :teams, :through => :result_guesses
+end
+

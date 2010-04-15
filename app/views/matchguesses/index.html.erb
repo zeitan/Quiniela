@@ -1,0 +1,18 @@
+<h1>Listing matchguesses</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @matchguesses.each do |matchguess| %>
+  <tr>
+    <td><%= link_to 'Show', matchguess %></td>
+    <td><%= link_to 'Edit', edit_matchguess_path(matchguess) %></td>
+    <td><%= link_to 'Destroy', matchguess, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New matchguess', new_matchguess_path %>
