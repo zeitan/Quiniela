@@ -1,3 +1,0 @@
-class ResultGuess < ActiveRecord::Base
-end
-

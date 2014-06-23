@@ -1,2 +1,0 @@
-class ResultGuesses < ActiveRecord::Base
-end
